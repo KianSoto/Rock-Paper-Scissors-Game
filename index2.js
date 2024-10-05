@@ -19,17 +19,16 @@ const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 
 //CREATING A FUNCTION FOR COMPUTER ANSWER
-function getComputerChoice(){
+function getComputerChoice() {
 
-    let randomInt = Math.random() * 3;
+    let randomInt = Math.random()*3;
 
-    if (randomInt <= 1){
-        return 'Rock';
-    } else if (randomInt <= 2){
-        return 'Paper';
-    } else {
-        return 'Scissors';
-    }
+    if (randomInt <= 1)
+        return "Rock";
+    else if (randomInt > 1 && randomInt <= 2)
+        return "Paper";
+    else
+        return "Scissors";
 }
 
 //CREATING A FUNCTION TO DISABLE BUTTONS WHEN GAME IS DONE

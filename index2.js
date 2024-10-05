@@ -90,27 +90,27 @@ function playRound(yourChoice, getComputerChoice) {
             {
                 win();
             }
-        else if (yourChoice == 'Rock' && computerPick == 'Scissor')
+        else if (yourChoice == 'Rock' && computerPick == 'Scissors')
             {
                 win();
             }
         else if (yourChoice == 'Scissors' && computerPick == 'Rock')
             {
-                lose()
+                lose();
             }
         else if (yourChoice == 'Scissors' && computerPick == 'Paper')
             {
-                win()
+                win();
             }
         else if (yourChoice == 'Paper' && computerPick == 'Scissors')
             {
-                lose()
+                lose();
             }
         else
             {
-                tie()
+                tie();
             }
-        roundsPlayed++
+        roundsPlayed++;
 
 //ROUND OVER FUNCTIONS TO SHOW RESULTS
         if (roundsPlayed === totalRounds){
